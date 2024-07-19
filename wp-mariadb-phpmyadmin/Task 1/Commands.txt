@@ -1,0 +1,4 @@
+docker pull mariadb:11.3.2
+docker run --name mariadb -e MYSQL_ROOT_PASSWORD=portablehole63 -p 3306:3306 -v $pwd/data/mariadb:/var/lib/mysql -d mariadb:11.3.2
+docker exec mariadb mariadb --version
+docker container list

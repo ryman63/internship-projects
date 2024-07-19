@@ -1,0 +1,17 @@
+docker pull ubuntu
+docker run -it ubuntu
+docker container list
+docker stop reverent_tu
+docker rm reverent_tu
+docker run -it --name ubuntu-last ubuntu
+docker container list
+echo Digital Spirit > test.txt
+docker exec -it ubuntu-last bash
+mkdir /var/txt
+exit
+docker cp test.txt ubuntu-last:/var/txt/
+docker exec -it ubuntu-last bash
+echo "portablehole63" >> /var/txt/test.txt
+docker cp ubuntu-last:/var/txt/ test.txt
+docker exec -it ubuntu-last bash
+cat /etc/lsb-release

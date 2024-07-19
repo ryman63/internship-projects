@@ -1,0 +1,47 @@
+########## Gradle ##########
+.gradle
+.envrc
+build/
+
+########## Maven ##########
+.polyglot.pom.yaml
+target/
+.flattened-pom.xml
+
+########## Eclipse ##########
+.factorypath
+.settings
+.project
+.classpath
+.springBeans
+bin
+
+########## IDEA ##########
+
+# Ignore IDEA build directory
+out/
+
+# Ignore IDEA project files
+*.iml
+*.ipr
+*.iws
+
+# Ignore all in .idea directory
+.idea/*
+
+# Don't ignore non environment-specific configs
+!.idea/codeStyles/
+!.idea/encodings.xml
+
+#Artifacts
+
+*.class
+*.war
+
+#Git merge original files
+*.orig
+
+#### Ctags
+tags
+/.java-version
+/.idea/

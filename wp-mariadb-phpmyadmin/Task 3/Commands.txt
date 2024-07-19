@@ -1,0 +1,1 @@
+docker run --name wp -e WORDPRESS_DB_HOST=mariadb:db -e WORDPRESS_DB_USER=root -e WORDPRESS_DB_PASSWORD=portablehole63 -e WORDPRESS_DB_NAME=test_db -e WORDPRESS_TABLE_PREFIX=ds -v $pwd/wp:/var/www/html -p 8080:80 --link mariadb:db -d wordpress

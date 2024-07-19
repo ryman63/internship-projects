@@ -1,0 +1,1 @@
+docker run --name phpmyadmin -d --link mariadb:db -e MYSQL_ROOT_PASSWORD='' -p 8088:80 phpmyadmin

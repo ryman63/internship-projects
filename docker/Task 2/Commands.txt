@@ -1,0 +1,14 @@
+docker pull ubuntu:18.04
+docker run -it --name ubuntu18 ubuntu:18.04
+docker container list
+docker image list
+docker volume list
+docker exec -it ubuntu18 bash
+cat /etc/lsb-release
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
+docker container list
+docker rmi $(docker images -a -q)
+docker image list
+docker volume prune
+docker volume list
